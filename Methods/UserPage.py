@@ -2,6 +2,7 @@ import requests
 from TestData import test_data
 from Logs import logs_file
 
+
 class UserPageMethods:
 
     log = logs_file.get_logs()
@@ -28,6 +29,7 @@ class UserPageMethods:
                 self.log.error(f"Expected 'Page' value: {page_number}, Actual 'Page' value: {r.json()['page']}")
                 flag = False
         except Exception as e:
+            flag = False
             self.log.error(f"Exception {e} occurred")
         return flag
 
@@ -47,5 +49,6 @@ class UserPageMethods:
                 self.log.error(f"Status code of API is: {r.status_code}, Expected Status code: 400")
                 flag = False
         except Exception as e:
+            flag = False
             self.log.error(f"Exception {e} occurred")
         return flag

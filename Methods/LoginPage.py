@@ -27,6 +27,7 @@ class LoginMethods:
                 self.log.error(f"Token is not generated successfully")
                 flag = False
         except Exception as e:
+            flag = False
             self.log.error(f"Exception {e} occurred")
         return flag
 
@@ -52,5 +53,6 @@ class LoginMethods:
                 self.log.error(f"Actual message: {r.json()['error']}, Expected message: 'user not found'")
                 flag = False
         except Exception as e:
+            flag = False
             self.log.error(f"Exception {e} occurred")
         return flag
