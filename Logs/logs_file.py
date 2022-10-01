@@ -1,5 +1,6 @@
 import logging
-
+import os
+current_log_file_path = os.path.join(os.path.abspath(__file__ + "/../../"), "Logs/current_log_file.log")
 
 def get_logs():
     """
@@ -7,7 +8,7 @@ def get_logs():
     :return: logger
     """
     logger = logging.getLogger()
-    filehandler = logging.FileHandler("..\\Logs\\current_log_file.log", mode="w")
+    filehandler = logging.FileHandler(current_log_file_path, mode="w")
     formatter = logging.Formatter('%(asctime)s: %(levelname)s: %(module)s: %(funcName)s: %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p')
     filehandler.setFormatter(formatter)
     logger.addHandler(filehandler)

@@ -1,13 +1,27 @@
 from py.xml import html
 import pytest
-
+from UtilityScripts.update_parameter_json import update_json_parameters
 
 def pytest_html_report_title(report):
     report.title = "API Automation"
 
 
+def pytest_addoption(parser):
+    group = parser.getgroup("general")
+    group._addoption(
+        "-S",
+        dest="Server",
+        default="reqres.in",
+        help="this is our api server",
+    )
+
 def pytest_configure(config):
     config._metadata["Website URL"] = "https://reqres.in"
+    if "-S" in config.invocation_params.args:
+        server = config.getoption("-S")
+        update_json_parameters("server",server)
+
+
 
 
 def pytest_html_results_summary(prefix):
