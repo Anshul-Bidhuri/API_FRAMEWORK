@@ -1,10 +1,12 @@
 import pytest
+import allure
 
 from Methods.LoginPage import LoginMethods
 
 
 class TestLogin(LoginMethods):
-
+    @allure.link('https://www.youtube.com/channel/UCSPUF_fElVzLyFuqyKHXCPA', name='Click Me')
+    @allure.title("To add custom title in Allure report")
     @pytest.mark.LoginPage
     def test_login_apis_correct_cred(self):
         """LOGIN PAGE: test login API with correct credentials """

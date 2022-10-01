@@ -1,17 +1,8 @@
-09/09/2022 01:42:11 PM: INFO: LoginPage: check_login_with_correct_cred: API is: https://reqres.in/api/login
-09/09/2022 01:42:11 PM: INFO: LoginPage: check_login_with_correct_cred: Input Data is: {'email': 'eve.holt@reqres.in', 'password': 'cityslicka'}
-09/09/2022 01:42:13 PM: INFO: LoginPage: check_login_with_correct_cred: Status code of API is: 200
-09/09/2022 01:42:13 PM: INFO: LoginPage: check_login_with_correct_cred: Token is generated successfully: QpwL5tke4Pnpja7X4
-09/09/2022 01:42:13 PM: INFO: LoginPage: check_login_with_incorrect_cred: API is: https://reqres.in/api/login
-09/09/2022 01:42:13 PM: INFO: LoginPage: check_login_with_incorrect_cred: Input Data is: {'email': 'fqeff', 'password': 'cityslicka'}
-09/09/2022 01:42:14 PM: INFO: LoginPage: check_login_with_incorrect_cred: Status code of API is: 400
-09/09/2022 01:42:14 PM: INFO: LoginPage: check_login_with_incorrect_cred: Error message is correct
-09/09/2022 01:42:14 PM: INFO: UserPage: check_list_of_user_api: API is: https://reqres.in/api/users?page=2
-09/09/2022 01:42:15 PM: INFO: UserPage: check_list_of_user_api: Status code of API is: 200
-09/09/2022 01:42:15 PM: INFO: UserPage: check_list_of_user_api: Response is correct
-09/09/2022 01:42:15 PM: INFO: UserPage: check_list_of_user_api: API is: https://reqres.in/api/users?page=10
-09/09/2022 01:42:16 PM: INFO: UserPage: check_list_of_user_api: Status code of API is: 200
-09/09/2022 01:42:16 PM: INFO: UserPage: check_list_of_user_api: Response is correct
-09/09/2022 01:42:16 PM: INFO: UserPage: check_create_new_user_with_incomplete_data_api: API is: https://reqres.in/api/users
-09/09/2022 01:42:16 PM: INFO: UserPage: check_create_new_user_with_incomplete_data_api: Input Data is: {'name': 'morpheus', 'job': ''}
-09/09/2022 01:42:16 PM: ERROR: UserPage: check_create_new_user_with_incomplete_data_api: Status code of API is: 201, Expected Status code: 400
+01/10/2022 01:42:26 PM: INFO: LoginPage: check_login_with_correct_cred: API is: https://reqres.in/api/login
+01/10/2022 01:42:26 PM: INFO: LoginPage: check_login_with_correct_cred: Input Data is: {'email': 'eve.holt@reqres.in', 'password': 'cityslicka'}
+01/10/2022 01:42:27 PM: INFO: LoginPage: check_login_with_correct_cred: Status code of API is: 200
+01/10/2022 01:42:27 PM: INFO: LoginPage: check_login_with_correct_cred: Token is generated successfully: QpwL5tke4Pnpja7X4
+01/10/2022 01:42:27 PM: INFO: LoginPage: check_login_with_incorrect_cred: API is: https://reqres.in/api/login
+01/10/2022 01:42:27 PM: INFO: LoginPage: check_login_with_incorrect_cred: Input Data is: {'email': 'fqeff', 'password': 'cityslicka'}
+01/10/2022 01:42:27 PM: INFO: LoginPage: check_login_with_incorrect_cred: Status code of API is: 400
+01/10/2022 01:42:27 PM: INFO: LoginPage: check_login_with_incorrect_cred: Error message is correct

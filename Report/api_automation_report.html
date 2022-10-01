@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>API Automation</h1>
-    <p>Report generated on 17-Sep-2022 at 11:32:17 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 01-Oct-2022 at 13:00:44 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -263,8 +263,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td><a href="https://reqres.in" target="_blank">https://reqres.in</a></td></tr></table>
     <h2>Summary</h2>
     <p>This demo framework is created by ANSHUL BIDHURI</p>
-    <p>2 tests ran in 4.86 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>2 tests ran in 1.39 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -274,23 +274,25 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable" col="duration">Duration</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="3">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Failed</td>
+          <td class="col-result">Passed</td>
           <td>LOGIN PAGE: test login API with correct credentials </td>
-          <td class="col-duration">2.28</td></tr>
+          <td class="col-duration">0.61</td></tr>
         <tr>
           <td class="extra" colspan="3">
-            <div class="log">self = &lt;test_login.TestLogin object at 0x000001B1A258DCD0&gt;<br/><br/>    @pytest.mark.LoginPage<br/>    def test_login_apis_correct_cred(self):<br/>        &quot;&quot;&quot;LOGIN PAGE: test login API with correct credentials &quot;&quot;&quot;<br/>        status = self.check_login_with_correct_cred()<br/>&gt;       assert status<br/><span class="error">E       assert False</span><br/><br/>TestFiles\test_login.py:12: AssertionError<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:LoginPage.py:16 API is: https://www/api/login
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:LoginPage.py:16 API is: https://reqres.in/api/login
 INFO     root:LoginPage.py:17 Input Data is: {&#x27;email&#x27;: &#x27;eve.holt@reqres.in&#x27;, &#x27;password&#x27;: &#x27;cityslicka&#x27;}
-ERROR    root:LoginPage.py:31 Exception HTTPSConnectionPool(host=&#x27;www&#x27;, port=443): Max retries exceeded with url: /api/login (Caused by NewConnectionError(&#x27;&lt;urllib3.connection.HTTPSConnection object at 0x000001B1A25D4400&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed&#x27;)) occurred<br/></div></td></tr></tbody>
-      <tbody class="failed results-table-row">
+INFO     root:LoginPage.py:20 Status code of API is: 200
+INFO     root:LoginPage.py:25 Token is generated successfully: QpwL5tke4Pnpja7X4<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Failed</td>
+          <td class="col-result">Passed</td>
           <td>LOGIN PAGE: test login API with incorrect credentials </td>
-          <td class="col-duration">2.28</td></tr>
+          <td class="col-duration">0.62</td></tr>
         <tr>
           <td class="extra" colspan="3">
-            <div class="log">self = &lt;test_login.TestLogin object at 0x000001B1A258DD60&gt;<br/><br/>    @pytest.mark.LoginPage<br/>    def test_login_apis_incorrect_cred(self):<br/>        &quot;&quot;&quot;LOGIN PAGE: test login API with incorrect credentials &quot;&quot;&quot;<br/>        status = self.check_login_with_incorrect_cred()<br/>&gt;       assert status<br/><span class="error">E       assert False</span><br/><br/>TestFiles\test_login.py:18: AssertionError<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:LoginPage.py:41 API is: https://www/api/login
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:LoginPage.py:41 API is: https://reqres.in/api/login
 INFO     root:LoginPage.py:42 Input Data is: {&#x27;email&#x27;: &#x27;fqeff&#x27;, &#x27;password&#x27;: &#x27;cityslicka&#x27;}
-ERROR    root:LoginPage.py:57 Exception HTTPSConnectionPool(host=&#x27;www&#x27;, port=443): Max retries exceeded with url: /api/login (Caused by NewConnectionError(&#x27;&lt;urllib3.connection.HTTPSConnection object at 0x000001B1A25D4C70&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed&#x27;)) occurred<br/></div></td></tr></tbody></table></body></html>
+INFO     root:LoginPage.py:45 Status code of API is: 400
+INFO     root:LoginPage.py:50 Error message is correct<br/></div></td></tr></tbody></table></body></html>
